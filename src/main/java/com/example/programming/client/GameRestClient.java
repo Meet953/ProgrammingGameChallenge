@@ -10,6 +10,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import reactor.core.publisher.Mono;
@@ -19,6 +20,7 @@ import java.time.Duration;
 
 import static com.example.programming.constants.GameConstants.*;
 
+@Component
 public class GameRestClient {
     private static final String HOST_URL = "http://localhost:8080/";
 
